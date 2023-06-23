@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+
+public class Main{
+    public static void main (String[]args){
+        Scanner input = new Scanner(System.in);
+        
+     
+        int n = input.nextInt();
+        int contIn = 0;
+        int contOut = 0;
+        int x=0;
+        
+        
+        for (int i = 0; i < n; i++) {
+        	x = input.nextInt();
+        	if (x >= 10 && x <= 20) {
+        		contIn++;
+        	}else {
+        		contOut++;
+        	}
+        }	System.out.println(contIn +" in ");
+        	System.out.println(contOut +" out ");
+    }
+    
+}

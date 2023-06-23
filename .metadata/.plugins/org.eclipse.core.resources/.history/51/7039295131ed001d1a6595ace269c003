@@ -1,0 +1,35 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class Main{
+	public static void main(String[]args) {
+		Scanner input = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		
+		
+		double valor = input.nextInt();
+		double juros;
+		
+		
+		if (valor >= 0.00 && valor <= 2000.00) {
+			System.out.println("Isento");
+			
+		}else if (valor >= 2000.01 && valor <= 3000.00) {
+			juros = (valor * 8) / 100;
+			System.out.printf("R$ %.2f%n",juros);
+		}else if (valor >= 3000.01 && valor <= 4500.00) {
+			juros = (valor * 18) / 100;
+			System.out.printf("R$ %.2f%n",juros);
+		}else if (valor > 4500.00) {
+			juros = (valor * 28) / 100;
+			System.out.printf("R$ %.2f%n",juros);
+		}
+		
+		
+		input.close();
+	
+		}
+}
+			

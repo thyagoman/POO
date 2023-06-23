@@ -1,0 +1,22 @@
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        int ab = nextInt();
+        int	bb = nextInt();
+        int	cb = nextInt();
+        int	db = nextInt();
+        int diferenca = (a*b)-c*d;
+      
+        
+        System.out.println("DIFERENCA = "+ diferenca);
+       
+        
+        input.close();  
+    }
+
+ 
+}

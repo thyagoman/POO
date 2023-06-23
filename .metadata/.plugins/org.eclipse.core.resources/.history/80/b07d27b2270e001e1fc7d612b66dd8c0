@@ -1,0 +1,13 @@
+
+public class Ebac {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+
+		double salario = 12889.890;
+		int valor = (int)salario;
+		
+		System.out.println(valor);
+	}
+
+}

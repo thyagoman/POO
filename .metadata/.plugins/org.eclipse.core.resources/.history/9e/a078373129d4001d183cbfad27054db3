@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main{
+	public static void main(String[]args) {
+		Scanner input = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		double notaA = input.nextDouble();
+		double notaB = input.nextDouble();
+		double notaC = input.nextDouble();
+		double peso_a = 2;
+		double peso_b = 3;
+		double peso_c = 5;
+		double ponderado = (notaA * peso_a) + (notaB * peso_b)+(notaC * peso_c);
+		double calc_peso = peso_a + peso_b + peso_c;
+		
+		double media = ponderado / calc_peso;
+		
+		System.out.printf("MEDIA = %.1f%n",media);
+		
+		 input.close();
+	}
+	
+	
+}

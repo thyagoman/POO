@@ -1,0 +1,24 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+	public static void main (String[]args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		 int maiorValor = 0;
+	        int posicaoMaiorValor = 0;
+	        for (int i = 1; i <= 5; i++) {
+	            int valorAtual = sc.nextInt();
+	            if (valorAtual > maiorValor) {
+	                maiorValor = valorAtual;
+	                posicaoMaiorValor = i;
+	            }
+	            System.out.println(maiorValor);
+	            System.out.println(posicaoMaiorValor);
+	        }
+				
+			}
+		}
+	
+

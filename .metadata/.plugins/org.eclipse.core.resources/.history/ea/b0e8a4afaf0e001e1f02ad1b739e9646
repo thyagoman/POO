@@ -1,0 +1,22 @@
+package bytebank;
+
+public class CriaConta {
+	public static void main(String[] args) {
+		Conta PrimeiraConta = new Conta();
+		PrimeiraConta.endereço = "rua felicio dos santos numero 79 parque alvorada guarulhos sao paulo";
+		PrimeiraConta.saldo = 9000;
+		System.out.println(PrimeiraConta.saldo);
+		
+		
+		
+		if (PrimeiraConta.saldo > 4000) {
+			System.out.println("Voce tem muito dinheiro "+PrimeiraConta.endereço);
+		}
+		else {
+			System.out.println("voce esta duro ladrao");
+		}
+	}
+
+}
+
+	

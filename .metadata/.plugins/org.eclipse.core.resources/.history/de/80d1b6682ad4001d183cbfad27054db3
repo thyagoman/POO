@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main{
+	public static void main (String[]args) {
+		Scanner input = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		
+		String nome = input.nextLine();
+		double salario = input.nextDouble();
+		double vendas = input.nextDouble();
+		double comissao = (vendas * 15) / 100;
+		double salario_bonus = comissao + vendas;
+		
+		System.out.printf("TOTAL = %.2f%n",salario_bonus);
+		
+		input.close();
+	}
+}

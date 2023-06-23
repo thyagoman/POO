@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main {
+	public static void main (String[]args) {
+		Scanner input = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		int a = input.nextInt();
+		int b = input.nextInt();
+		int c = input.nextInt();
+		
+		int maiorAB = (a + b + Math.abs(a-b)) / 2;
+		int maior = maiorAB + c + Math.abs(maiorAB - c);
+		
+		
+	
+		
+		
+		 
+		System.out.println(maior + " eh o maior");
+		
+		
+		input.close();
+	}
+}

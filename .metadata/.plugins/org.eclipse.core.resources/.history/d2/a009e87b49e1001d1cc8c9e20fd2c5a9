@@ -1,0 +1,89 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class Main {
+
+	public static void main(String[] args) {		
+
+		Scanner input = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		double num = input.nextDouble();
+		int quociente,resto,moeda,nota;
+		
+		resto = (int)(num * 100 + 0.5);
+		
+		
+		System.out.println("NOTAS:");
+		
+		nota = 100;
+		quociente = resto / (nota*100);
+		System.out.println(quociente);
+		resto = resto % nota * 100;
+		
+		nota = 100;
+		quociente = resto / (nota*100);
+		System.out.println(quociente);
+		resto = resto % nota * 100;
+		
+		nota = 50;
+		quociente = resto / (nota*100);
+		System.out.println(quociente);
+		resto = resto % nota * 100;
+		
+		nota = 20;
+		quociente = resto / (nota*100);
+		System.out.println(quociente);
+		resto = resto % nota * 100;
+		
+		nota = 10;
+		quociente = resto / (nota*100);
+		System.out.println(quociente);
+		resto = resto % nota * 100;
+		
+		nota = 5;
+		quociente = resto / (nota*100);
+		System.out.println(quociente);
+		resto = resto % nota * 100;
+		
+		nota = 2;
+		quociente = resto / (nota*100);
+		System.out.println(quociente);
+		resto = resto % nota * 100;
+		
+		System.out.println("MOEDAS:");
+		
+		moeda = 100;
+		quociente = resto /moeda;
+		System.out.println();
+		resto = resto % moeda;
+		
+		moeda = 50;
+		quociente = resto /moeda;
+		System.out.println();
+		resto = resto % moeda;
+		
+		moeda = 25;
+		quociente = resto /moeda;
+		System.out.println();
+		resto = resto % moeda;
+		
+		moeda = 10;
+		quociente = resto /moeda;
+		System.out.println();
+		resto = resto % moeda;
+		
+		moeda = 5;
+		quociente = resto /moeda;
+		System.out.println();
+		resto = resto % moeda;
+		
+		moeda = 1;
+		quociente = resto /moeda;
+		System.out.println();
+		resto = resto % moeda;
+		
+		
+	}
+}

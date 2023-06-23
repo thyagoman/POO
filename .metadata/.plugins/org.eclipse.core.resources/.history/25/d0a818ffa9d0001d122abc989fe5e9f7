@@ -1,0 +1,25 @@
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) {
+    	 
+    	
+    	
+        Scanner input = new Scanner(System.in);
+        
+        int a1 = input.nextInt();
+        int	b2 = input.nextInt();
+        int	c3 = input.nextInt();
+        int	d4 = input.nextInt();
+        int diferenca = (a1*b2)-c3*d4;
+      
+        
+        System.out.println("DIFERENCA = "+ diferenca);
+       
+        
+        input.close();  
+    }
+
+ 
+}
