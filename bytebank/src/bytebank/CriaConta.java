@@ -1,0 +1,28 @@
+package bytebank;
+
+public class CriaConta {
+
+	public static void main(String[] args) {
+		Conta cliente1 = new Conta();
+		Conta cliente2 = cliente1;
+		
+		cliente1.agencia = 1231;
+		cliente1.cep = 07242240;
+		cliente1.conta = 312981;
+		cliente1.nomeCliente = "tiago aparecido pereira";
+		
+		System.out.println(cliente1);
+		System.out.println(cliente2);
+		cliente2.saldo = 5000;
+		cliente2.juros = 10;
+		cliente2.juros = (cliente2.juros * cliente2.saldo) /100;
+		
+		
+		System.out.println(cliente1.saldo);
+		System.out.println(cliente2.juros);
+		System.out.printf("O seu saldo é %.2f  e sua taxa de juros  é de %.2f%n ",cliente1.saldo,cliente2.juros);
+				
+
+	}
+
+}
