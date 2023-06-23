@@ -1,0 +1,48 @@
+package matrizes;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        int M = scanner.nextInt();
+        int S = scanner.nextInt();
+
+        int[] sensorCount = new int[S + 1];
+
+        for (int i = 1; i <= S; i++) {
+            int X = scanner.nextInt();
+            int Y = scanner.nextInt();
+            int R = scanner.nextInt();
+
+            for (int x = Math.max(1, X - R); x <= Math.min(N, X + R); x++) {
+                for (int y = Math.max(1, Y - R); y <= Math.min(M, Y + R); y++) {
+                    int distanceSquared = (X - x) * (X - x) + (Y - y) * (Y - y);
+                    if (distanceSquared <= R * R) {
+                        sensorCount[i]++;
+                    }
+                }
+            }
+        }
+
+        int totalSectors = N * M;
+        double averageSensors = 0;
+        int cumulativeSensors = 0;
+
+        for (int i = 0; i <= S; i++) {
+            averageSensors += i * (double) sensorCount[i] / totalSectors;
+            cumulativeSensors += sensorCount[i];
+        }
+
+        int Z = (int) Math.floor(averageSensors);
+        System.out.println(Z);
+
+        scanner.close();
+    }
+}
+
+  
+        
+	
+
+

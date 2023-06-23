@@ -1,0 +1,12 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		int y = 32;
+		double x = 30.643563;
+		double soma = x +y
+		System.out.printf("%.2f",x);
+		System.out.printf("%.4f",x);
+	}
+
+}

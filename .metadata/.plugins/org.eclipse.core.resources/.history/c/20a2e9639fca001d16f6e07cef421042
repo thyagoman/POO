@@ -1,0 +1,12 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Prazer Thyzera monstro");
+		System.out.print("Qual é o seu nome");
+		System.out.println("Vai toma no seu cu ");
+		
+	}
+
+}

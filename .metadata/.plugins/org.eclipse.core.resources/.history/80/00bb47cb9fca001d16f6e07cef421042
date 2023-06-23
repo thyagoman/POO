@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		int y = 32;
+		int x = 30;
+		int soma = 0;
+		soma = (x+y);
+		System.out.println("o valor é " + soma);
+		
+	}
+
+}

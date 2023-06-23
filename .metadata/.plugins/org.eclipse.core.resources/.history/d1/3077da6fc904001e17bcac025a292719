@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+
+        int [] vetor = {1,2,3,4,5,5,6,7,88,99,7,8};
+        int count = 0;
+        
+        for(int i = vetor.length - 1;i >= 0;i--) {
+        	vetor[i] = i;
+        	count++;
+        	System.out.println("vetor na posicao "+count+"recebe o valor "+vetor[i]);
+        }
+        
+        
+       
+    }
+}

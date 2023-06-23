@@ -1,0 +1,21 @@
+
+public class Ebac {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Hello World!");
+		double v = 0.1;
+		double x = 0.04343;
+		double z = 0.09;
+		
+		double soma = v+x+z;
+		
+		double valor = soma;
+		
+		System.out.println(valor);
+		
+		
+		
+	}
+
+}
